@@ -8,6 +8,76 @@
 <body>
     <h1><allign center></allign> hello world</h1></allign></h1>
     <h1>hi there</h1>
+    <h1>
+        Using System;
+Namespace HelloWorld
+{
+  Class Compute
+  {
+    // void type yung ginamit kasi wala namang irereturn na value
+    Public void Addition(double x, double y)
+    {
+      Console.WriteLine(“{0}+{1} = {2}”,x,y,x + y);
+    }
+    Public void Difference(double x, double y)
+    {
+      Console.WriteLine(“{0}-{1} = {2}”,x,y,x – y);
+    }
+    Public void Multiply(double x, double y)
+    {
+      Console.WriteLine(“{0}*{1} = {2}”,x,y,x * y);
+    }
+    Public void Division(double x, double y)
+    {
+      Console.WriteLine(“{0}/{1} = {2}”,x,y,x / y);
+    }
+  }
+  Class Program
+  {
+    Static void Main(string[] args)
+    {
+      Double x,y;
+      Char oprt;
+      Do//do while loop para sa pagulit ng program 
+      { 
+      Compute com = new Compute();//OBJECT NAME IS com
+      Console.Write(“ENTER VALUE FOR 1ST NUMBER: “);
+      X = Convert.ToDouble(Console.ReadLine());
+      
+      Console.Write(“ENTER VALUE FOR 2ND NUMBER: “);
+      Y = Convert.ToDouble(Console.ReadLine());
+      
+      Console.WriteLine(“----CHOOSE OPERATOR----“);
+      Console.WriteLine(“[+]-PLUS”);
+      Console.WriteLine(“[-]-MINUS”);
+      Console.WriteLine(“[*]-MULTIPLY”);
+      Console.WriteLine(“[/]-DIVIDE”);
+      Console.WriteLine(“[#]-EXIT”);
+      
+      Console.Write(“SELECT OPERATOR: “);
+      Oprt = Convert.ToChar(Console.ReadLine());
+      
+      Switch(oprt)//switch case para sa condition kung anong operator ang pipiliin ni user
+      {
+        //ginamit yung object com para matawag yung method sa class Compute
+        Case ‘+’: com.Addition(x,y);
+        Break;
+        Case ‘-‘: com.Difference(x,y);
+        Break;
+        Case ‘*’: com.Multiply(x,y);
+        Break;
+        Case ‘/’: com.Division(x,y);
+        Break;
+        Case ‘#’: Console.WriteLine(“END PROGRAM”);
+                  Console.ReadKey();
+                  Return;//return para magend yung loop
+      } 
+      } while(true);
+      
+    }
+  }
+}
+    </h1>
     <marquee>ANG LUPETT</marquee>
     <marquee>SAM JHERWIN S. TAGUFA</marquee>
     <ul>
