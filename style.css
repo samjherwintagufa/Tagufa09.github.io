@@ -2,12 +2,11 @@ h1 {
     color:blue;
 }
 .button1 {
-    color:blue;
-    border-style: none;
-    border-color: gold;
-    border: 2px;
-    size: 24px ;
-    transition: 0.4s;   
+    background-color: white;
+    color: black;
+    border: 2px solid #4caf4c;
+    
+     
 }
 .button1:hover {
     background-color: blue;
