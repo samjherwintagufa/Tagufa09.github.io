@@ -7,5 +7,87 @@
 </head>
 <body>
     <center><h1>it's a prankkkkkkkkkkkkkkk</h1></center>
+    <p>
+        namespace lesson10
+{
+    class BookMark
+    {
+        private string inkColor = "BLACK";
+        private int inkContent = 20;
+
+        public void displayInfo()
+        {
+            Console.WriteLine("     Ink Color is {0} & Ink Content is {1}", inkColor, inkContent);
+        }
+        public void changeColor()
+        {
+            string Ccolor;
+            Console.WriteLine("SELECT COLOR: ");
+            Ccolor = Console.ReadLine();
+            if (inkContent == 0)
+            {
+                Console.WriteLine("     PLEASE REFILL ");
+            }
+            else
+            {
+                inkColor = Ccolor;
+                Console.WriteLine("     The color now is {0} ", Ccolor);
+            }           
+        }
+        public void refill()
+        {
+            Console.WriteLine("     Ink Content to 20ml");
+            inkContent = 20;
+        }
+        public void write()
+        {
+            if (inkContent == 0)
+            {
+                Console.WriteLine("     PLEASE REFILL ");
+            }
+            else
+            {
+                Console.WriteLine("     10 deducted in Ink Content ");
+                inkContent = inkContent - 10;
+            }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            BookMark bm = new BookMark();
+            int op;
+            do
+            {
+                Console.WriteLine("---MENU---");
+                Console.WriteLine("1. DISPLAY INFO");
+                Console.WriteLine("2. CHANGE COLOR");
+                Console.WriteLine("3. REFILL");
+                Console.WriteLine("4. WRITE");
+                Console.WriteLine("5. EXIT");
+                Console.WriteLine("ENTER YOUR CHOICE");
+                op = Convert.ToInt32(Console.ReadLine());
+                switch (op)
+                {
+                    case 1: bm.displayInfo();
+                        break;
+                    case 2: bm.changeColor();
+                        break;
+                    case 3: bm.refill();
+                        break;
+                    case 4: bm.write();
+                        break;
+                    case 5: Console.WriteLine("---EXIT---");
+                        return;
+
+                }
+            } while (true);
+                
+            
+        }
+    }
+}
+    </p>
 </body>
 </html>
