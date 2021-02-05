@@ -14,7 +14,7 @@ h1 {
 }
 .myBox {
     border: none;
-    padding: 100px;
+    padding: 2px;
     font: 24px/36px sans-serif;
     width: 500px;
     height: 500px;
@@ -23,12 +23,12 @@ h1 {
     
     /* Scrollbar styles */
     ::-webkit-scrollbar {
-    width: 50px;
-    height: 50px;
+    width: 5px;
+    height: 5px;
     }
     
     ::-webkit-scrollbar-track {
-    width: 20px;
+    width: 2px;
     border: 1px dashed goldenrod;
     }
     
