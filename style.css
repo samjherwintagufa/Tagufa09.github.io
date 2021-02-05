@@ -3,7 +3,8 @@ h1 {
 }
 .button {
     color:blue;
-    background-color: brown;
+    width: 20px;
+    height: 10px;
 }
 
        
