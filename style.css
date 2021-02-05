@@ -12,4 +12,31 @@ h1 {
     font-size: 24px;
     padding: 24px 56px;
 }
+.myBox {
+    border: none;
+    padding: 5px;
+    font: 24px/36px sans-serif;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    }
+    
+    /* Scrollbar styles */
+    ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    width: 2px;
+    border: 1px dashed goldenrod;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: goldenrod;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: darkgoldenrod;  
+    }
        
