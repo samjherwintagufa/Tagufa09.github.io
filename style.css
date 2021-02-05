@@ -3,7 +3,7 @@ h1 {
 }
 .button1 {
     color:blue;
-    border-style: dashed;
+    border-style: none;
     border-color: gold;
     border: 2px;
     size: 24px ;
