@@ -23,8 +23,8 @@ h1 {
     
     /* Scrollbar styles */
     ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 500px;
+    height: 500px;
     }
     
     ::-webkit-scrollbar-track {
