@@ -5,7 +5,11 @@ h1 {
     background-color: white;
     font-size: 24px;
     padding: 10px 20px;
+    transition-duration: 0.4s;
 }
+.button1:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
 .button2{
     background-color: white;
     font-size: 24px;
