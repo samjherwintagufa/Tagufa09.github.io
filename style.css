@@ -2,15 +2,16 @@ h1 {
     color:blue;
 }
 .button1{
-    
     background-color: white;
     font-size: 24px;
-    padding: 24px 56px;
+    padding: 10px 20px;
 }
 .button2{
     background-color: white;
     font-size: 24px;
-    padding: 24px 56px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-color: green;
 }
 
        
