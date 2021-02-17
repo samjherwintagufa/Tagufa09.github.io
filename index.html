@@ -18,6 +18,20 @@
     <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
     <button class="button5" type="submit"><a hreflang=Tagufa.html">CONTINUE</a></button>
   </form>
+  <script language="javascript">
+    function check(form)
+    {
+      if(form.fname.value == "tagufa" && form.pwd.value == "tagufa")
+      {
+        return true;
+      }
+      else
+      {
+        alert("error password or usernake")
+        return false;
+      }
+    }
+  </script>
     
   <div class="container1">
     <ul>
