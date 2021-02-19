@@ -1,29 +1,16 @@
 h1 {
-    color:#000 ;
+    color:blue;
 }
-.container {
-  padding: 16px;
-  background-color:#f1f1f13a;
+.button1{
+    background-color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    transition-duration: 0.4s;
 }
-.container1 {
-  padding: 16px;
-  background-color: black;
-}
-.body {font-family: Arial, Helvetica, sans-serif;}
-.button5 {
-  background-color: #4CAF50;
+.button1:hover {
+  background-color: #4CAF50; /* Green */
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
 }
-
-.button5:hover {
-  opacity: 0.8;
-}
-
 .button2{
     background-color: white;
     font-size: 24px;
@@ -41,28 +28,5 @@ h1 {
   text-align: center;
   color: white;
 }
-.ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  border-radius: 25px 25px;
-  }
-  .li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 25px 25px;
-  }
-  .li a.active {
-  background-color: #555;
-  color: white;
-  }
-  .li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-  }
 
        
