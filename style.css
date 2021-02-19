@@ -3,6 +3,7 @@ h1 {
 }
 .container {
   padding: 16px;
+  background-color: black;
 }
 .button1{
     background-color: white;
