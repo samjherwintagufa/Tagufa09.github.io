@@ -1,6 +1,9 @@
 h1 {
     color:blue;
 }
+.container {
+  padding: 16px;
+}
 .button1{
     background-color: white;
     font-size: 24px;
