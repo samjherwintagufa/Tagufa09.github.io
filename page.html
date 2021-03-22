@@ -10,91 +10,83 @@
     <center><h1>PLEASE TRY TO UNDERSTAND</h1></center>
     
     <pre>
-        using System;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-        namespace HelloWorld
+namespace GradeComputation
+{
+    public partial class Form1 : Form
+    {
+
+        public Form1()
         {
-          class BookMark
-          {
-            private string inkColor = "black";
-            private int inkContent = 20;
-            
-            public void display()
-            {
-              Console.WriteLine("{0} {1}",inkColor,inkContent);
-            }
-            public void changeC()
-            {
-              string Ch;
-              Console.WriteLine("change color ");
-              Ch = Console.ReadLine();
-              if(inkContent == 0)
-                 {
-                   Console.WriteLine("Refill");
-                 }
-              
-              else
-                 {
-                   inkColor = Ch;
-                   Console.WriteLine(inkColor);
-                 }              
-            }
-            public void refill()
-            {
-              Console.WriteLine("ink content is 20ml");
-              inkContent = 20;
-            }
-            public void write()
-            {
-              if (inkContent == 0)
-              {
-                Console.WriteLine("Refill");
-              }
-              else
-              {
-                Console.WriteLine("10ml deducted");
-                inkContent = inkContent - 10;
-              }
-            }
-          }
-                   
-          class Program
-          {
-            static void Main(string[] args)
-            {
-              BookMark bm = new BookMark();
-              int choice;
-              do
-              {
-                Console.WriteLine("---MENU---");
-                Console.WriteLine("1. DISPLAY INFO");
-                Console.WriteLine("2. CHANGE COLOR");
-                Console.WriteLine("3. REFILL");
-                Console.WriteLine("4. WRITE");
-                Console.WriteLine("5. EXIT");
-                
-                Console.WriteLine("ENTER YOUR CHOICE");
-                choice = Convert.ToInt32(Console.ReadLine());
-                
-                switch(choice)
-                {
-                  case 1: bm.display();
-                    break;
-                  case 2: bm.changeC();
-                    break;
-                  case 3: bm.refill();
-                    break;
-                  case 4: bm.write();
-                    break;
-                  case 5: Console.WriteLine("end");
-                          return;
-                
-                }                                      
-              }while(true);
-                
-            }
-          }
+            InitializeComponent();
         }
+
+        private void btnCompute_Click(object sender, EventArgs e)
+        {
+                    double mQ, mEXAM, mCS, fQ, fEXAM, fCS;
+                    double mGrade, fGrade, semGrade;
+                    // lagay natin bawat name of textboxsa variable natin with using of double.parse.
+                    mQ = double.Parse(txtQ.Text);
+                    mEXAM = double.Parse(txtExam.Text);
+                    mCS = double.Parse(txtCs.Text);
+
+                    fQ = double.Parse(txtFQ.Text);
+                    fEXAM = double.Parse(txtFExam.Text);
+                    fCS = double.Parse(txtFCs.Text);
+
+                    //formula of mid term grade and use the variable mG.
+                    mGrade = (mQ*0.4) + (mEXAM*0.4) + (mCS*0.2);
+
+                    // formula for final grade and use the variable fG.
+                    fGrade = (fQ*0.4) + (fEXAM*0.4) + (fCS*0.2);
+
+                    semG = (mGrade, fGrade)*2;
+
+                    //i show the average in label named lblsemG.
+                    lblsemG.Text = semG.ToString();
+
+                    //if else 
+                    if (semG >= 91 && semG <= 100)
+                    {
+                        lbleG.Text = "A";
+                    }
+                    else if (semG >= 86 && semG <= 90)
+                    {
+                        lbleG.Text = "B";
+                    }
+                    else if (semG >= 81 && semG <= 85)
+                    {
+                        lbleG.Text = "C";
+                    }
+                    else if (semG >= 75 && semG <= 80)
+                    {
+                        lbleG.Text = "D";
+                    }
+                    else if (semG >= 50 && semG <= 74)
+                    {
+                        lbleG.Text = "F";
+                    }
+                    else if (semG > 100)
+                    {
+                        lbleG.Text = "OVER A";
+                    }
+                    else
+                    {
+                        lbleG.Text = "failed";
+
+                    }
+        }
+   }
+}
 </pre>
 
 </body>
