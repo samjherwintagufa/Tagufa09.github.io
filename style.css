@@ -45,5 +45,7 @@ h1 {
   text-align: center;
   color: white;
 }
-
+.body1 {
+  background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+}
        
