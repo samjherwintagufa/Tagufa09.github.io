@@ -6,7 +6,7 @@ h1 {
   background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
 }
 .button {
-  background-color: #4CAF50;
+  background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
