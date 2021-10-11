@@ -12,3 +12,8 @@
                 -13px -13px 20px #ffffff;
 
 }
+.side-box{
+    width: 20px;
+    height: 100px;
+    background-color: aqua;
+}
